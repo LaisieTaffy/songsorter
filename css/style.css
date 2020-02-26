@@ -1,0 +1,80 @@
+body {
+	background-color: #171717;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	color: ghostwhite;
+	background-image: url("../img/sslogo.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: 100%
+}
+
+a, a:hover {
+  color: ghostwhite;
+}
+
+#optTable {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 15px;
+}
+
+#btn-rawtext {
+	cursor: pointer;
+	color: #f9d5bb;
+	background-color: #f66767;
+	width: 150px;
+	padding: 2px;
+	border: 3px solid #d35656;
+	border-radius: 10px;
+}
+
+#menubar {
+	position: fixed;
+  color: ghostwhite;
+	width: 100%;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	background-color: #171717;
+	z-index: 1;
+  text-align: center;
+  border-bottom-color: ghostwhite;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+}
+
+.menu-item {
+  width: 120px;
+  height: 100%;
+  bottom: 50px;
+  float: left;
+  border-left-color: ghostwhite;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+#menu-restart {
+  border-left-width: 0px;
+}
+
+.menu-link {
+  cursor: pointer;
+}
+
+.menu-right {
+  float: right;
+}
+
+.resTable thead {
+  background-color: #000038;
+  color: #fff;
+}
+
+.resTable tbody, #fldLeft, #fldMiddleT, #fldRight, #fldMiddleB {
+  background-color: #fff;
+}
+
+.cbox {
+  font-size: 12px;
+}
