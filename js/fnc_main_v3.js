@@ -54,6 +54,8 @@ var back_int_LeftList = int_LeftList;
 var back_int_LeftID = int_LeftID;
 var maxRows = 25;
 
+var audio = new Audio();
+
 // *****************************************************************************
 // * StartUp
 // * <BODY>タグの読み込み終了時に実行。
@@ -582,12 +584,12 @@ function fnc_ShowData() {
          }
          obj_Item.title = obj_TempData[1];
 		 obj_SelectItem.innerHTML = obj_TempData[1];
+
 		 var name_Item = cT(obj_TempData[1]);
          obj_SelectItem.replaceChild(obj_Item, obj_SelectItem.firstChild);
 		 obj_SelectItem.appendChild(cE('br'));
 		 obj_SelectItem.appendChild(name_Item);
-      }
-
+    }
       int_Count++;
    }
 }
@@ -596,3 +598,56 @@ function fnc_CC(sID, sClass) {
 
    sC(gID(sID), sClass);
 }
+
+function playL(){
+  fnc_Pause();
+  var songTitle = document.getElementById("fldLeft").textContent;
+  for(i = 0; i < ary_CharacterData.length; i++){
+    if(ary_CharacterData[i][1] == songTitle){
+      var audio_Src = str_AudioPath + songTitle + ".mp3";
+      document.getElementById("audio").setAttribute('src', audio_Src);
+      document.getElementById("audio").load();
+      document.getElementById("audio").play();
+      break;
+    }
+  }
+
+  audio.play();
+}
+
+function playR(){
+  fnc_Pause();
+  var songTitle = document.getElementById("fldRight").textContent;
+  for(i = 0; i < ary_CharacterData.length; i++){
+    if(ary_CharacterData[i][1] == songTitle){
+      var audio_Src = str_AudioPath + songTitle + ".mp3";
+      document.getElementById("audio").setAttribute('src', audio_Src);
+      document.getElementById("audio").load();
+      document.getElementById("audio").play();
+      break;
+    }
+  }
+
+  audio.play();
+}
+
+function fnc_Pause(){
+  var playing = document.getElementById("audio");
+  playing.pause();
+}
+
+/*
+function play(){
+  var audio = document.getElementById("audio");
+  audio.play();
+}
+*/
+
+/*
+function cs_change_music(music){
+  document.getElementById("audio").pause();
+  document.getElementById("my-audio").setAttribute('src', music);
+  document.getElementById("my-audio").load();
+  document.getElementById("my-audio").play();
+}
+*/

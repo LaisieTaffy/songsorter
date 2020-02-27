@@ -6,6 +6,8 @@ str_CenterT = 'Tie!';
 str_CenterB = 'Undo last choice';
 
 str_ImgPath = 'img/';
+
+str_AudioPath = 'audio/';
 // 0:順番に　1:昔の
 var bln_ResultMode = 1;
 // 0:テキスト　1:イラスト　2:テキスト＋イラスト
@@ -68,7 +70,7 @@ var ary_CharacterData = [
   [1, "Boku no Sakura",    [0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0], "art/PD.jpg"],
   [1, "Wasshoi J!",    [0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0], "art/PD.jpg"],
   [1, "Suifu wa Arashi ni Yume wo Miru",    [0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0], "art/PD.jpg"],
-  [1, "Shirou Shirt",    [0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0], "art/PD.jpg"],
+  [1, "Shiroi Shirt",    [0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0], "art/PD.jpg"],
 
   [1, "Nagai Hikari",    [1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0], "art/RKJ.jpg"],
   [1, "Squall no Aida ni",    [1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0], "art/RKJ.jpg"],
@@ -115,7 +117,7 @@ var ary_CharacterData = [
   [1, "Natsu ga Icchatta",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
   [1, "Koike",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
   [1, "Tsuki no Katachi",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
-  [1, "Dareka no Tame ni ~What can I do for someone?~",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
+  [1, "Dareka no Tame ni",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
   [1, "Medley (Team J)",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
   [1, "Medley (Team T)",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
   [1, "Namida Uri no Shoujo",    [1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0], "art/DnT.jpg"],
@@ -194,7 +196,7 @@ var ary_CharacterData = [
   [1, "Wagamama na Nagareboshi",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
   [1, "Ai no Iro",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
   [1, "Dakishimeraretara",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
-  [1, "Mushi no Balla",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
+  [1, "Mushi no Ballad",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
   [1, "Furishite Maneshite",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
   [1, "Umi wo Watare!",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],
   [1, "Machikado no Party",    [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0], "art/SA.jpg"],

@@ -7,7 +7,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top;
-	background-size: 100%
+	background-size: 115%
 }
 
 a, a:hover {
@@ -68,11 +68,11 @@ a, a:hover {
 
 .resTable thead {
   background-color: #000038;
-  color: #fff;
+  color: ghostwhite;
 }
 
-.resTable tbody, #fldLeft, #fldMiddleT, #fldRight, #fldMiddleB {
-  background-color: #fff;
+.resTable tbody, #fldLeft, #fldMiddleT, #fldRight, #fldMiddleB, #fldPlay {
+  background-color: ghostwhite;
 }
 
 .cbox {

@@ -48,14 +48,33 @@
 
 				<tbody>
 					<tr>
-						<td id="fldLeft" onclick="fnc_Sort(-1);" rowspan="2"><img src="img/favicon.png"></td>
-						<td style="border: 0px; width: 7px;" rowspan="2"></td>
-						<td id="fldMiddleT" onclick="fnc_Sort(0);"><p>JKT48 Song Sort</p>
-						<td style="border: 0px; width: 7px;" rowspan="2"></td>
-						<td id="fldRight" onclick="fnc_Sort(1);" rowspan="2"><img src="img/favicon.png"></td>
+						<td id="fldPlay" rowspan="3" onclick="playL()">
+							<img id=button src="img/play.png">
+								<audio id="audio">
+									<source src="" type="audio/mpeg">
+								</audio>
+							</img>
+						</td>
+						<td id="fldLeft" onclick="fnc_Sort(-1); fnc_Pause();" rowspan="3"><img src="img/favicon.png"></td>
+						<td style="border: 0px; width: 7px;" rowspan="3"></td>
+						<td id="fldMiddleT" onclick="fnc_Sort(0); fnc_Pause();"><p>JKT48 Song Sort</p>
+						<td style="border: 0px; width: 7px;" rowspan="3"></td>
+						<td id="fldRight" onclick="fnc_Sort(1); fnc_Pause();" rowspan="3"><img src="img/favicon.png"></td>
+						<td id="fldPlay" rowspan="3" onclick="playR()">
+							<img id=button src="img/play.png">
+								<audio id="audio">
+									<source src="" type="audio/mpeg">
+								</audio>
+							</img>
+						</td>
 					</tr>
 					<tr>
-						<td id="fldMiddleB" onclick="fnc_Undo();">Click to start!</td>
+						<td id="fldMiddleB" onclick="fnc_Undo(); fnc_Pause();">Click to start!</td>
+					</tr>
+					<tr>
+						<td id="fldPlay" onclick="fnc_Pause();">
+							<img id="button" colspan="7" src="img/stop.png"></img>
+						</td>
 					</tr>
 				</tbody>
 
