@@ -8,9 +8,13 @@ Version 1.0
 Version 1.1
 - Added song snippets for Pajama Drive & Saka Agari
 
+Version 1.2
+- Added non-stage songs
+- Added song snippets for Renai Kinshi Jourei
+- Bug fixes
+
 ### to do
 
-* Add non-stage songs?
 * Add the remaining song snippets
 
 
